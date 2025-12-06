@@ -100,7 +100,7 @@ nav{
     width: 46vw;
     
     right: 0;
-    top: 68vh;
+    top: 69vh;
    
 }
 .shape-1{
@@ -143,6 +143,6 @@ border-radius: 50%;
         transform: translate(5%, -5%);
     }
     to{
-        transform:translate(-20%, 30%);
+        transform:translate(-20%, 50%);
     }
 }
