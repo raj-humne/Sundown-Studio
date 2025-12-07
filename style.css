@@ -219,32 +219,79 @@ margin-top: 4.5vw;
     width: 100%;
     margin-top: 2vw;
 }
-.cicleAnim2{
-    height: 30vw;
-    width: 30vw;
-    background: linear-gradient(#fe320a, #fe4f0a);
+.hero-shape2{
+    height: 32vw;
+    width: 32vw;
+    background: linear-gradient(to top right,#fe320a, #f7770d);
     border-radius: 50%;
     position: absolute;
     top: 60%;
     left: 30%;
     filter: blur(20px);
+    animation: circleAnimation2 6s linear 0s infinite alternate;
+    pointer-events: none;
 }
-.circleAnim2P2{
-    height: 25vw;
-    width: 25vw;
-    background: linear-gradient(#fe320a, #fe4f0a);
-    border-radius: 50%;
-    position: absolute;
-    top: 65%;
-    left: 32%;
-    filter: blur(20px);
-    animation: circleAnimation2 1.5s 0s infinite linear alternate;
-}
+
 @keyframes circleAnimation2 {
     from{
-        transform: translate(8%, -12%);
+    filter: blur(20px);
+        transform: translate(10%, -10%) skew(0);
     }
     to{
-        transform:translate(-8%, 12%);
+    filter: blur(30px);
+
+        transform:translate(-10%, 10%) skew(-12deg);
     }
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 4vw 0;
+    
+}
+.elem-cont{
+ width: 100%;
+ background-color: transparent;
+ display: block;
+ padding: 50px 0;
+}
+
+.elem{
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.408);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.elem h2{
+    font-size: 3vw;
+    padding: 0 2vw;
+    position: relative;
+    z-index: 9;
+}
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #ff9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: .2s all ease-out;
+}
+.elem:hover .overlay{
+    top: 0;
+}
+.fixed-image{
+    height: 30vw;
+    width: 24vw;
+    background-color: red;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 25%;
+    border-radius: 15px;
+    display: none;
 }
