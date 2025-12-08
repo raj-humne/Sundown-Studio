@@ -290,3 +290,22 @@ margin-top: 4.5vw;
     background-size: cover;
     background-position: center;
 }
+.feat-circ{
+    height: 10px;
+    width: 10px;
+    background-color: #fe320a;
+    border-radius: 50%;
+}
+.feat-proj{
+    /* background-color: aqua; */
+    margin: 1vw 3vw;
+    width: 12vw;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap:.5vw;
+}
+.feat-proj h3{
+     font-size: 1vw;
+     font-weight: 200;
+}
