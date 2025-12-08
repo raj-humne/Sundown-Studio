@@ -19,3 +19,15 @@ elems.forEach((e)=>{
         fixed.style.backgroundImage = `url(${image})`
     })
 })
+var mgn = document.querySelectorAll(".heading")
+mgn.forEach((m)=>{
+    m.addEventListener("click",()=> {
+        m.classList.toggle("margin")
+        if(m.style.color == "#504a45" || m.style.color == "rgb(80, 74, 69)"){
+            m.style.color = "white"
+        }
+        else{
+            m.style.color = "#504a45"
+        }
+    })
+})
