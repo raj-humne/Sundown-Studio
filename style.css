@@ -402,3 +402,8 @@ main{
 .footer h1{
     font-size: 23vw;
 }
+.footer-div{
+    height:20vh;
+    width: 100%;
+    background-color: red;
+}
