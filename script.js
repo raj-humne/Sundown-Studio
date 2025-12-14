@@ -28,12 +28,15 @@ items.forEach(item=>{
         
     })
 })
- var swiper = new Swiper(".mySwiper", {
+function swiperAnimation(){
+     var swiper = new Swiper(".mySwiper", {
       slidesPerView: "auto",
       centeredSlides: true,
-      spaceBetween: 30,
+      spaceBetween: 100,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
     });
+}
+swiperAnimation();
