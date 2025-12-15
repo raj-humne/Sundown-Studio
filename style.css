@@ -392,7 +392,7 @@ main{
     z-index: 999;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: #fe320a;
     color: white;
     bottom: 0;
     display: flex;
@@ -405,10 +405,32 @@ main{
     border-bottom: 1px solid white;
 }
 .footer-div{
-    height:20vh;
+    height:25vh;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
     
+}
+.footer-div p{
+    font-size: 1.5vw;
+}
+.footer-div .para-mail input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.603);
+    color: rgba(255, 255, 255, 0.714);
+    text-align: left;
+    padding: 1vw 0vw;
+    width: 20vw;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
+.footer-div input::placeholder{
+    color: rgba(255, 255, 255, 0.666);
 }
 .swiper {
   width: 100%;
@@ -455,4 +477,9 @@ main{
      }
      .foot-heading{
         /* background-color: gray; */
+     }
+     .h1s h1{
+        font-size: 2vw;
+        border: none;
+        line-height: 2.7vw;
      }
