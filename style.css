@@ -475,9 +475,7 @@ main{
         align-items: center;
         justify-content: space-between;
      }
-     .foot-heading{
-        /* background-color: gray; */
-     }
+
      .h1s h1{
         font-size: 2vw;
         border: none;
