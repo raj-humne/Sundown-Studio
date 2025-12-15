@@ -483,3 +483,11 @@ main{
         border: none;
         line-height: 2.7vw;
      }
+    .anim-footer {
+    height: 45vw;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    transform: rotateX(30deg);
+    transform-origin: center;
+}
