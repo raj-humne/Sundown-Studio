@@ -396,12 +396,13 @@ main{
     color: white;
     bottom: 0;
     display: flex;
-    /* align-items: flex-end; */
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .footer h1{
     font-size: 23vw;
+    border-bottom: 1px solid white;
 }
 .footer-div{
     height:20vh;
@@ -441,3 +442,17 @@ main{
         font-weight: 200;
         
     }
+    .foot-subheadings h4{
+        font-weight: lighter;
+        font-size: 1.2vw;
+    }
+     .foot-subheadings{
+        margin-top: 2vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
+     .foot-heading{
+        /* background-color: gray; */
+     }
