@@ -392,7 +392,7 @@ main{
     z-index: 999;
     height: 100vh;
     width: 100%;
-    background-color: #fe320a;
+    background-color: black;
     color: white;
     bottom: 0;
     display: flex;
@@ -403,6 +403,8 @@ main{
 .footer h1{
     font-size: 23vw;
     border-bottom: 1px solid white;
+    position: relative;
+        z-index: 999;
 }
 .footer-div{
     height:25vh;
@@ -416,6 +418,8 @@ main{
 }
 .footer-div p{
     font-size: 1.5vw;
+    position: relative;
+    z-index: 999;
 }
 .footer-div .para-mail input{
     background-color: transparent;
@@ -426,6 +430,8 @@ main{
     text-align: left;
     padding: 1vw 0vw;
     width: 20vw;
+    position: relative;
+    z-index: 999;
     font-size: 1.2vw;
     margin-top: 1vw;
 }
@@ -472,6 +478,8 @@ main{
         margin-top: 2vw;
         width: 100%;
         display: flex;
+        position: relative;
+        z-index: 999;
         align-items: center;
         justify-content: space-between;
      }
@@ -479,6 +487,8 @@ main{
      .h1s h1{
         font-size: 2vw;
         border: none;
+        position: relative;
+        z-index: 999;
         line-height: 2.7vw;
      }
     .anim-footer {
@@ -488,4 +498,39 @@ main{
     position: absolute;
     transform: rotateX(30deg);
     transform-origin: center;
+}
+.footer-shape-1, .footer-shape{
+    background-color: #fe320a;
+    height: 50vw;
+    width: 90vw;
+    position: absolute;
+    right: -40%;
+    top: -30%;
+    transform: rotate(35deg);
+    /* border: 2px solid white; */
+    animation: footAnim2 6s ease-in-out 0s infinite alternate;
+    filter: blur(50px);    
+}
+.footer-shape-2{
+    transform: rotate(-35deg);
+    left: -40%;
+    top: -30%;
+    animation: footAnim 6s ease-in-out 0s infinite alternate;
+    filter: blur(50px);
+}
+@keyframes footAnim {
+    from{
+        transform: translateX(0%) translateY(0%)  rotate(-35deg);
+    }
+    to{
+        transform: translateX(10%) translateY(-10%) rotate(-25deg);
+    }
+}
+@keyframes footAnim2 {
+    from{
+        transform: translateY(0%)  rotate(35deg) skew(0);
+    }
+    to{
+        transform: translateY(-10%) rotate(45deg) skew(1);
+    }
 }
