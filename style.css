@@ -449,7 +449,7 @@ main{
     position: fixed;
     z-index: 99999;
     top: -0%;
-    /* background-color: black; */
+    background-color: black;
 }
 .swiper {
   width: 100%;
